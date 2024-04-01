@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Personal Area'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="personal-area">
+            <div class="personal-area__container">
+               <div class="pages-navigation">
+                  <ul class="breadcrumb">
+                     <li><a href="home.html">Main page</a></li>
+                     <li class="current">Personal Area</li>
+                  </ul>
+               </div>
+               <div class="personal-area__body">
+                  <aside class="personal-area__sidebar menu-personal-area">
+                     <ul class="menu-personal-area__list">
+                        <li class="menu-personal-area__general"><a href="general.html">General</a></li>
+                        <li class="menu-personal-area__messages"><a href="messages.html">Messages</a></li>
+                        <li class="menu-personal-area__real-estate current">Real Estate ads</li>
+                        <li class="menu-personal-area__job"><a href="personal-area-jobs.html">Job ads</a></li>
+                        <li class="menu-personal-area__favorite"><a href="favorite.html">Favorite</a></li>
+                        <li class="menu-personal-area__log-out"><button type="button">Log out</button></li>
+                     </ul>
+                  </aside>
+                  <div class="personal-area__content personal-area__content_ads">
+                     <div class="real-estate-ads">
+                        <div class="real-estate-ads__total total-ads">Total ads: <span>17</span></div>
+                        <div class="real-estate-ads__body">
+                           <div class="real-estate-ads__articles">
+                              <article class="real-estate-ad">
+                                 <a href="real-estate-page.html" class="real-estate-ad__image-ibg">
+                                    <img data-src="@img/real-estate-page/service-info/image01.jpg" alt="Apartment">
+                                    <div class="type-block type-block_absolute">rent</div>
+                                 </a>
+                                 <div class="real-estate-ad__body">
+                                    <div class="real-estate-ad__rating rating-result">
+                                       <ul class="rating-result__list">
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                       </ul>
+                                       ( 28 reviews)
+                                    </div>
+                                    <h2 class="real-estate-ad__title article-title"><a href="real-estate-page.html">Apartment SEA view and Private parking</a></h2>
+                                    <p class="real-estate-ad__text">Presenting for long or short term rent a beautiful ground floor beach-front 1 bed on Palm Beach Piazza Sahl Hasheesh. With an enviable location and a great pool on the sea front and private beach, this is a great holiday home or long term relaxation proposition.</p>
+                                    <div class="real-estate-ad__price price-title">$ 2740 <span>per night</span></div>
+                                    <div class="real-estate-ad__actions">
+                                       <button type="button" class="real-estate-ad__button">Edit</button>
+                                       <button type="button" class="real-estate-ad__button">Delete</button>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="real-estate-ad">
+                                 <a href="real-estate-page.html" class="real-estate-ad__image-ibg">
+                                    <img data-src="@img/real-estate-page/service-info/image02.jpg" alt="Apartment">
+                                    <div class="type-block type-block_absolute">rent</div>
+                                 </a>
+                                 <div class="real-estate-ad__body">
+                                    <div class="real-estate-ad__rating rating-result">
+                                       <ul class="rating-result__list">
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                       </ul>
+                                       ( 28 reviews)
+                                    </div>
+                                    <h2 class="real-estate-ad__title article-title"><a href="real-estate-page.html">Apartment 2 BR with Pool view and Private garden</a></h2>
+                                    <p class="real-estate-ad__text">Mangroovy takes pride in being the only residential project built directly on the beach in El Gouna. Mangroovy’s coveted location places it away from all the noise and clutter, but still close enough to all of the important facilities one might need.</p>
+                                    <div class="real-estate-ad__price price-title">$ 3200 <span>per night</span></div>
+                                    <div class="real-estate-ad__actions">
+                                       <button type="button" class="real-estate-ad__button">Edit</button>
+                                       <button type="button" class="real-estate-ad__button">Delete</button>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="real-estate-ad">
+                                 <a href="real-estate-page.html" class="real-estate-ad__image-ibg">
+                                    <img data-src="@img/real-estate-page/service-info/image03.jpg" alt="Apartment">
+                                    <div class="type-block type-block_absolute">rent</div>
+                                 </a>
+                                 <div class="real-estate-ad__body">
+                                    <div class="real-estate-ad__rating rating-result">
+                                       <ul class="rating-result__list">
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                       </ul>
+                                       ( 28 reviews)
+                                    </div>
+                                    <h2 class="real-estate-ad__title article-title"><a href="real-estate-page.html">Apartment Pool view and Private parking</a></h2>
+                                    <p class="real-estate-ad__text">It is located in the heart of Makadi Bay on the beautiful Red Sea coast, Makadi Heights is only 15 minutes from Hurghada Airport, and getting there from the outside has never been easier, while the cities of Hurghada and El Gouna are 20 and 30 minutes away.</p>
+                                    <div class="real-estate-ad__price price-title">$ 950 <span>per night</span></div>
+                                    <div class="real-estate-ad__actions">
+                                       <button type="button" class="real-estate-ad__button">Edit</button>
+                                       <button type="button" class="real-estate-ad__button">Delete</button>
+                                    </div>
+                                 </div>
+                              </article>
+                              <article class="real-estate-ad">
+                                 <a href="real-estate-page.html" class="real-estate-ad__image-ibg">
+                                    <img data-src="@img/real-estate-page/service-info/image04.jpg" alt="Apartment">
+                                    <div class="type-block type-block_absolute">rent</div>
+                                 </a>
+                                 <div class="real-estate-ad__body">
+                                    <div class="real-estate-ad__rating rating-result">
+                                       <ul class="rating-result__list">
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                          <li><img src="@img/icons/star.svg" alt="yellow star"></li>
+                                       </ul>
+                                       ( 28 reviews)
+                                    </div>
+                                    <h2 class="real-estate-ad__title article-title"><a href="real-estate-page.html">Platinum Resort Apartment Two-Bedrooms 120 sqm</a></h2>
+                                    <p class="real-estate-ad__text">Mangroovy takes pride in being the only residential project built directly on the beach in El Gouna. Mangroovy’s coveted location places it away from all the noise and clutter, but still close enough to all of the important facilities one might need.</p>
+                                    <div class="real-estate-ad__price price-title">$ 4140 <span>per night</span></div>
+                                    <div class="real-estate-ad__actions">
+                                       <button type="button" class="real-estate-ad__button">Edit</button>
+                                       <button type="button" class="real-estate-ad__button">Delete</button>
+                                    </div>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="catalog-actions">
+                              <div class="catalog-actions__container">
+                                 <button type="button" class="catalog-actions__show-more button"><img src="@img/icons/arrow-circle.svg" alt="Circle arrow">Show more</button>
+                                 <div class="catalog-actions__controls">
+                                    <a href="#" class="catalog-actions__prev controls-item">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                          <path d="M9 1L3.82842 6.17157C2.49509 7.50491 1.82843 8.17157 1.82843 9C1.82843 9.82843 2.49509 10.4951 3.82842 11.8284L9 17" stroke="#FF703E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                    </a>
+                                    <ul class="catalog-actions__pagination">
+                                       <li class="catalog-actions__item controls-item current"><a href="#">1</a></li>
+                                       <li class="catalog-actions__item controls-item"><a href="#">2</a></li>
+                                       <li class="catalog-actions__item controls-item"><a href="#">3</a></li>
+                                    </ul>
+                                    <a href="#" class="catalog-actions__next controls-item">
+                                       <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                                          <path d="M1 17L6.17158 11.8284C7.50491 10.4951 8.17157 9.82843 8.17157 9C8.17157 8.17157 7.50491 7.50491 6.17158 6.17158L1 1" stroke="#FF703E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

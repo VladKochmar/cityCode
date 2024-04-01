@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Real estate added'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="create-ad">
+            <div class="create-ad__container">
+               <h1 class="create-ad__title article-title">Create ad</h1>
+               <form action="#" class="create-ad__form">
+                  <div class="create-ad__inputs">
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">details</legend>
+                        <input autocomplete="off" type="text" name="real_estate_title" placeholder="Title*" class="input input_background no-empty">
+                        <input autocomplete="off" type="tel" name="real_estate_phone" placeholder="Phone*" class="input input_background phone">
+                        <input autocomplete="off" type="text" name="real_estate_location" placeholder="Location*" class="input input_background no-empty">
+                        <input autocomplete="off" type="text" name="real_estate_price" placeholder="Price*" id="currency" class="input input_background">
+                        <input autocomplete="off" type="text" name="real_estate_size" placeholder="Property size (square meters)*" class="input input_background no-empty">
+                        <label class="label"><input autocomplete="off" type="text" name="real_estate_rent_type" placeholder="Rent type*" class="input no-empty"></label>
+                        <label class="label"><input autocomplete="off" min="0" type="text" name="real_estate_floor" placeholder="Floor*" class="input number"></label>
+                        <label class="label"><input autocomplete="off" min="1" type="text" name="real_estate_rooms" placeholder="Number of rooms*" class="input number"></label>
+                     </fieldset>
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">Photos</legend>
+                        <p class="create-ad__text">The first photo will be the title</p>
+                        <div class="create-ad__images">
+                        </div>
+                        <label class="create-ad__file button"><span class="placeholder">Add photo*</span><input photo-add-button id="inputFile" type="file" name="company_logo" accept=".jpg, .png, .jpeg, .webp, .avif" class="input-file"></label>
+                     </fieldset>
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">Description</legend>
+                        <textarea rows="10" name="real_estate_description" placeholder="Description*" class="input input_background textarea no-empty"></textarea>
+                     </fieldset>
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">Services and facilities</legend>
+                        <input added-input type="text" name="services_facilities_1" placeholder="Services and facilities*" class="input input_background no-empty">
+                        <input added-input type="text" name="services_facilities_2" placeholder="Services and facilities*" class="input input_background no-empty">
+                        <button type="button" add-input-button class="create-ad__add real-estate-add button">Add new services</button>
+                     </fieldset>
+                  </div>
+                  <button type="submit" class="create-ad__publish orange-button">Publish</button>
+               </form>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

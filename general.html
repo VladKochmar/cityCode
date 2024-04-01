@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Personal Area'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="personal-area">
+            <div class="personal-area__container">
+               <div class="pages-navigation">
+                  <ul class="breadcrumb">
+                     <li><a href="home.html">Main page</a></li>
+                     <li class="current">Personal Area</li>
+                  </ul>
+               </div>
+               <div class="personal-area__body">
+                  <aside class="personal-area__sidebar menu-personal-area">
+                     <ul class="menu-personal-area__list">
+                        <li class="menu-personal-area__general current">General</li>
+                        <li class="menu-personal-area__messages"><a href="messages.html">Messages</a></li>
+                        <li class="menu-personal-area__real-estate"><a href="personal-area-real-estate.html">Real Estate ads</a></li>
+                        <li class="menu-personal-area__job"><a href="personal-area-jobs.html">Job ads</a></li>
+                        <li class="menu-personal-area__favorite"><a href="favorite.html">Favorite</a></li>
+                        <li class="menu-personal-area__log-out"><button type="button">Log out</button></li>
+                     </ul>
+                  </aside>
+                  <div class="personal-area__content">
+                     <form action="#" class="personal-area__form form-personal-area">
+                        <fieldset class="form-personal-area__block">
+                           <legend class="form-personal-area__title">Personal information</legend>
+                           <input type="text" name="user_name" placeholder="User name" class="form-personal-area__input input input_background">
+                           <input type="email" name="user_email" placeholder="User email" class="form-personal-area__input input input_background">
+                           <input type="text" name="user_phone_number" placeholder="User phone number" class="form-personal-area__input input input_background">
+                        </fieldset>
+                        <fieldset class="form-personal-area__block">
+                           <legend class="form-personal-area__title">Change password</legend>
+                           <input type="text" name="user_password" placeholder="Password" class="form-personal-area__input input input_background">
+                           <input type="text" name="confirm_password" placeholder="Confirm password" class="form-personal-area__input input input_background">
+                        </fieldset>
+                        <button type="submit" class="form-personal-area__button orange-button">Registration</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

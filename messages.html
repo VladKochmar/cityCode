@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Personal Area'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="personal-area">
+            <div class="personal-area__container">
+               <div class="pages-navigation">
+                  <ul class="breadcrumb">
+                     <li><a href="home.html">Main page</a></li>
+                     <li class="current">Personal Area</li>
+                  </ul>
+               </div>
+               <div class="personal-area__body">
+                  <aside class="personal-area__sidebar menu-personal-area">
+                     <ul class="menu-personal-area__list">
+                        <li class="menu-personal-area__general"><a href="general.html">General</a></li>
+                        <li class="menu-personal-area__messages current">Messages</li>
+                        <li class="menu-personal-area__real-estate"><a href="personal-area-real-estate.html">Real Estate ads</a></li>
+                        <li class="menu-personal-area__job"><a href="personal-area-jobs.html">Job ads</a></li>
+                        <li class="menu-personal-area__favorite"><a href="favorite.html">Favorite</a></li>
+                        <li class="menu-personal-area__log-out"><button type="button">Log out</button></li>
+                     </ul>
+                  </aside>
+                  <div class="personal-area__content">
+                     <div class="ads-block">
+                        <div class="ads-list">
+                           <div class="ads-list__item" data-type="job_offer">
+                              <div class="ads-list__header">
+                                 <div class="ads-list__type">Job offer</div>
+                                 <button type="button" class="ads-list__actions"></button>
+                              </div>
+                              <h2 class="ads-list__title">Commercial Medico-Marketing Team Lead</h2>
+                              <a href="#" class="ads-list__view-ad">View ad</a>
+                              <div class="ads-list__footer">
+                                 <div class="ads-list__statys new">New applicant</div>
+                                 <time datetime="2023-01-23" class="ads-list__time">28.01.23</time>
+                              </div>
+                           </div>
+                           <div class="ads-list__item" data-type="real_estate">
+                              <div class="ads-list__header">
+                                 <div class="ads-list__type">Real Estate</div>
+                                 <button type="button" class="ads-list__actions"></button>
+                              </div>
+                              <h2 class="ads-list__title">Apartment OFELIA view and Private parking</h2>
+                              <a href="#" class="ads-list__view-ad">View ad</a>
+                              <div class="ads-list__footer">
+                                 <div class="ads-list__statys new">New messages</div>
+                                 <time datetime="2023-02-12" class="ads-list__time">12.02.23</time>
+                              </div>
+                           </div>
+                           <div class="ads-list__item" data-type="real_estate">
+                              <div class="ads-list__header">
+                                 <div class="ads-list__type">Real Estate</div>
+                                 <button type="button" class="ads-list__actions"></button>
+                              </div>
+                              <h2 class="ads-list__title">Apartment OFELIA view and Private parking</h2>
+                              <a href="#" class="ads-list__view-ad">View ad</a>
+                              <div class="ads-list__footer">
+                                 <div class="ads-list__statys">No new messages</div>
+                                 <time datetime="2023-02-12" class="ads-list__time">12.02.23</time>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="content">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

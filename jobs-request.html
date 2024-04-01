@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Jobs request'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="jobs-request">
+            <div class="jobs-request__container">
+               <a href="#" class="jobs-request__back">Back to vacancy</a>
+               <div class="jobs-request__content">
+                  <div class="jobs-request__header header-jobs-request">
+                     <div class="header-jobs-request__company">
+                        <h1 class="article-title">WE LOOKing Commercial Medico-Marketing Team Lead</h1>
+                        <img src="@img/jobs-catalog/reliable_robotics.svg" alt="reliable robotics logo">
+                     </div>
+                     <p class="header-jobs-request__subtitle">Your details</p>
+                     <p class="header-jobs-request__text">Make it easier for an employer to contact you and improve your chances of getting a job.</p>
+                  </div>
+                  <aside class="jobs-request__sidebar job-sidebar">
+                     <div class="job-sidebar__block">
+                        <h2 class="job-sidebar__title">About - reliabe robotics</h2>
+                        <p class="job-sidebar__subtitle">Healthcare and Medical Services</p>
+                        <p class="job-sidebar__text">Caduceus Lane is a leading entrepreneurial company that serves specialized strategic marketing and corporate medical consultation for healthcare domains and pharmaceuticals industries, employing a ‘pioneer networking business model’ that would create high-quality marketing solutions tailored for the extended networks across MENA region.</p>
+                        <table class="job-sidebar__table">
+                           <tr>
+                              <td>Employees:</td>
+                              <td>101-500</td>
+                           </tr>
+                           <tr>
+                              <td>Location:</td>
+                              <td>Alexandria, Egypt </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </aside>
+                  <form action="#" class="jobs-request__form form-request">
+                     <input type="text" name="first_name" placeholder="First name*" class="form-request__input input input_background text">
+                     <input type="text" name="last_name" placeholder="Last name*" class="form-request__input input input_background text">
+                     <input type="text" id="email" name="user_email" placeholder="Email*" class="form-request__input input input_background">
+                     <input type="tel" id="phone" name="user_phone" placeholder="Phone*" class="form-request__input input input_background">
+                     <textarea rows="5" name="user_message" class="form-request__input input input_background textarea" placeholder="Message"></textarea>
+                     <label class="form-request__file"><span class="placeholder">Attach resume, certificates and other documents</span><input type="file" name="user_resume" accept=".pdf, .docx" multiple class="input-file"></label>
+                     <button type="submit" class="form-request__button orange-button">Send</button>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

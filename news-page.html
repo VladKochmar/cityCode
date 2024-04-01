@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'News Catalog'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="main-block" style="background-image: url(img/news-page/main-page/main_photo.jpg);">
+            <h1 hidden>news in hurghada</h1>
+            <p class="main-block__label">NEWS IN</p>
+            <img src="@img/icons/hurghada.svg" alt="Hurghada" class="main-block__icon">
+         </section>
+         <div class="pages-navigation">
+            <div class="pages-navigation__container">
+               <ul class="breadcrumb">
+                  <li><a href="home.html">Main page</a></li>
+                  <li><a href="news-catalog.html">News in Hurghada</a></li>
+                  <li class="current">Egypt- Hurghada receives 1st tourist group from Berlin</li>
+               </ul>
+            </div>
+         </div>
+         <div class="news-block">
+            <div class="news-block__container">
+               <article class="news-article">
+                  <div class="news-article__header">
+                     <h2 class="news-article__title article-title">Egypt- Hurghada receives 1st tourist group from Berlin</h2>
+                     <time class="news-article__date" datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                  </div>
+                  <div class="news-article__body">
+                     <div>
+                        <p>Tourist Office of the Egyptian Tourism Promotion Board in Egypt’s Red Sea coastal city of Hurghada received, on Sunday, the first tourist group from the German capital, Berlin, since the resumption of travel in early July.</p>
+                        <p>Hurghada International Airport received the first flight from Berlin, with 125 passengers on board, after a hiatus of nearly 10 months, due to the coronavirus pandemic. Eman Mahmoud, the head of the domestic tourism sector at the Egyptian Tourism Promotion Board, said that Germany is considered one of the most important tourist-exporting markets to Egypt.</p>
+                        <p>She mentioned that this trip is the result of the efforts made by the Egyptian Ministry of Foreign Affairs and the Egyptian Embassy in Germany to restore the German tourist movement to Egypt, in coordination with the Egyptian Ministry of Tourism and Antiquities.</p>
+                        <p>Notably, Khaled Al-Anani, Minister of Tourism and Antiquities, visited Berlin last September, which was the first visit by an Egyptian official to Germany after the outbreak of COVID-19.During the visit, he held a number of official and professional meetings to discuss the resumption of the German tourism movement to Egypt, where he met with Minister of State for Tourism Affairs, Minister of State for Foreign Affairs, Chairperson of Coronavirus Crisis Committee, and Chairperson of Tourism Committee of German Bundestag.</p>
+                        <p>On Saturday, the Egyptian Tourism Promotion Board announced that Hurghada also received the first tourist group from the Slovakian capital, Bratislava, since the resumption of inbound tourism in early July. The group comprised 130 tourists.</p>
+                     </div>
+                     <img data-src="@img/news-page/article/image01.jpg" alt="Beach">
+                     <div>
+                        <p>Egypt’s Minister of Tourism and Antiquities Khaled al-Anany on Friday met with officials in Berlin to talk ways to enhance and revitalize the inbound tourism movement from the German market during the coming period, in addition to the impact of coronavirus crisis and the Russian-Ukrainian war on German air traffic to Egypt.</p>
+                        <p>Anany arrived in the German capital on Thursday after a visit to the British capital, London, during which he held talks with the officials of the Association of British Travel Agents (ABTA) to for more tourist movement.</p>
+                        <p>He began his visit by holding two lengthy meetings at the headquarters of the Egyptian Embassy in Berlin, with the President of the Federal Association of German Airlines, Michael Engel, the CEO of the FTI Group, one of the largest German tour operators dealing with the Egyptian tourist destination, Ralph Schiller, the Head of International Markets at the FTI Group Maya Ammar and the President of the Quality Travel Alliance (QTA), Europe’s largest travel and tourism alliance, Thomas Bösl.</p>
+                        <p>Anany on Friday also met with President of the German Travel Association (DRV) Norbert Fiebig at the Egyptian Embassy in Berlin.</p>
+                     </div>
+                  </div>
+                  <ul class="news-article__social-list">
+                     <li class="news-article__item"><a href="#"><img src="@img/icons/social-media/facebook_gray.svg" alt="facebook icon"></a></li>
+                     <li class="news-article__item"><a href="#"><img src="@img/icons/social-media/invision_gray.svg" alt="invision icon"></a></li>
+                     <li class="news-article__item"><a href="#"><img src="@img/icons/social-media/rss_gray.svg" alt="RSS icon"></a></li>
+                     <li class="news-article__item"><a href="#"><img src="@img/icons/social-media/telegram_gray.svg" alt="telegram icon"></a></li>
+                     <li class="news-article__item"><a href="#"><img src="@img/icons/social-media/twitter_gray.svg" alt="twitter icon"></a></li>
+                  </ul>
+               </article>
+               <aside class="news-sidebar">
+                  <h2 class="news-sidebar__title">Recommended news</h2>
+                  <div class="news-sidebar__body">
+                     <div class="news-sidebar__item">
+                        <a href="news-page.html" class="news-sidebar__link">Jonnie Irwin gives cancer battle update as he shares candid Christmas snaps</a>
+                        <time class="news-sidebar__date">2 day ago</time>
+                        <a href="news-page.html" class="news-sidebar__image"><img data-src="@img/news-page/sidebar/image01.jpg" alt="cookies"></a>
+                     </div>
+                     <div class="news-sidebar__item">
+                        <a href="news-page.html" class="news-sidebar__link">London hospital pioneers new approach to hip and knee surgery</a>
+                        <time class="news-sidebar__date">2 day ago</time>
+                        <a href="news-page.html" class="news-sidebar__image"><img data-src="@img/news-page/sidebar/image02.jpg" alt="lobby"></a>
+                     </div>
+                     <div class="news-sidebar__item">
+                        <a href="news-page.html" class="news-sidebar__link">Egypt’s Luxor African Film Festival to honor Hisham Nazih</a>
+                        <time class="news-sidebar__date">3 day ago</time>
+                        <a href="news-page.html" class="news-sidebar__image"><img data-src="@img/news-page/sidebar/image03.jpg" alt="Egypt’s Luxor African Film Festival to honor Hisham Nazih"></a>
+                     </div>
+                     <div class="news-sidebar__item">
+                        <a href="news-page.html" class="news-sidebar__link">Development Lights Up Hurghada with the First Edition of ALDAU International Art Festival</a>
+                        <time class="news-sidebar__date">4 day ago</time>
+                        <a href="news-page.html" class="news-sidebar__image"><img data-src="@img/news-page/sidebar/image04.jpg" alt="decorations"></a>
+                     </div>
+                     <div class="news-sidebar__item">
+                        <a href="news-page.html" class="news-sidebar__link">Logos Hope: The World’s Largest Floating Library Is Now in Port Said</a>
+                        <time class="news-sidebar__date">6 day ago</time>
+                        <a href="news-page.html" class="news-sidebar__image"><img data-src="@img/news-page/sidebar/image05.jpg" alt="Port"></a>
+                     </div>
+                  </div>
+               </aside>
+            </div>
+         </div>
+         <section class="news-catalog news-catalog_padding">
+            <div class="news-catalog__container">
+               <h2 class="news-catalog__title article-title">YOU can also like</h2>
+               <div class="news-catalog__body">
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">Egypt- Hurghada receives 1st tourist group from Berlin</h3>
+                           <p class="article-news-item__text">Tourist Office of the Egyptian Tourism Promotion Board in Egypt's Red Sea coastal city of Hurghada received...</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image01.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">The historic city where homes sell for an extra £70,000</h3>
+                           <p class="article-news-item__text">Edward Stoyle, of Savills estate agents, said York offered a reasonable commute to London and other cities to the north.</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image02.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">Moderate earthquake of magnitude 4.6 just reported 86 km northwest of Hurghada, Egypt</h3>
+                           <p class="article-news-item__text">Edward Stoyle, of Savills estate agents, said York offered a reasonable commute to London and other cities to the north.</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image03.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">Air Cairo starts new flights to Hurghada from Budapest, Milan and Naples</h3>
+                           <p class="article-news-item__text">Budapest International Airport announced that the low-cost Egyptian company Air Cairo has taken nearly 40,000 one-way seats to Egypt from next year’s reservations.</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image04.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

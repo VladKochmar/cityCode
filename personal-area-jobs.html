@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Personal Area'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="personal-area">
+            <div class="personal-area__container">
+               <div class="pages-navigation">
+                  <ul class="breadcrumb">
+                     <li><a href="home.html">Main page</a></li>
+                     <li class="current">Personal Area</li>
+                  </ul>
+               </div>
+               <div class="personal-area__body">
+                  <aside class="personal-area__sidebar menu-personal-area">
+                     <ul class="menu-personal-area__list">
+                        <li class="menu-personal-area__general"><a href="general.html">General</a></li>
+                        <li class="menu-personal-area__messages"><a href="messages.html">Messages</a></li>
+                        <li class="menu-personal-area__real-estate"><a href="personal-area-real-estate.html">Real Estate ads</a></li>
+                        <li class="menu-personal-area__job current">Job ads</li>
+                        <li class="menu-personal-area__favorite"><a href="favorite.html">Favorite</a></li>
+                        <li class="menu-personal-area__log-out"><button type="button">Log out</button></li>
+                     </ul>
+                  </aside>
+                  <div class="personal-area__content personal-area__content_ads">
+                     <div class="jobs-ads">
+                        <div class="jobs-ads__total total-ads">Total ads: <span>2</span></div>
+                        <div class="jobs-ads__articles">
+                           <div class="jobs-ads__item">
+                              <article class="job-advertisement">
+                                 <div class="job-advertisement__header">
+                                    <div class="job-advertisement__info">
+                                       <h3 class="job-advertisement__title"><a href="jobs-page.html">Senior System Administrator</a></h3>
+                                       <address class="job-advertisement__location"><img src="@img/icons/jobs/mapPinLine.svg" alt="Map icon">Caduceus Lane - Hurghada, Red Sea, Egypt</address>
+                                       <div class="job-advertisement__time">2 days ago</div>
+                                    </div>
+                                    <img class="job-advertisement__logo" src="@img/jobs-catalog/reliable_robotics.svg" alt="Reliable robotics logo">
+                                 </div>
+                                 <div class="job-advertisement__type type-block type-block_inline-block">Full time</div>
+                                 <p class="job-advertisement__text">BetterMe is a company that distributes affordable digital health products that allow people of different age and physical abilities. Our zastosunki were installed over 100 million times all over the world.</p>
+                                 <div class="job-advertisement__buttons">
+                                    <button type="button" class="job-advertisement__button">Edit</button>
+                                    <button type="button" class="job-advertisement__button">Delete</button>
+                                 </div>
+                              </article>
+                           </div>
+                           <div class="jobs-ads__item">
+                              <article class="job-advertisement">
+                                 <div class="job-advertisement__header">
+                                    <div class="job-advertisement__info">
+                                       <h3 class="job-advertisement__title"><a href="jobs-page.html">Account Executive</a></h3>
+                                       <address class="job-advertisement__location"><img src="@img/icons/jobs/mapPinLine.svg" alt="Map icon">Hurghada, Red Sea, Egypt</address>
+                                       <div class="job-advertisement__time">3 days ago</div>
+                                    </div>
+                                    <img class="job-advertisement__logo" src="@img/jobs-catalog/healthfirst.svg" alt="Healthfirst logo">
+                                 </div>
+                                 <div class="job-advertisement__type type-block type-block_inline-block">Part time</div>
+                                 <p class="job-advertisement__text">Participer à la croissance de notre Chiffre d'Affaires et développer notre portefeuille client sur le Small & Middle Business (SMB)</p>
+                                 <div class="job-advertisement__buttons">
+                                    <button type="button" class="job-advertisement__button">Edit</button>
+                                    <button type="button" class="job-advertisement__button">Delete</button>
+                                 </div>
+                              </article>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

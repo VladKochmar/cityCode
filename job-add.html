@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Jobs added'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="create-ad">
+            <div class="create-ad__container">
+               <h1 class="create-ad__title article-title">Create ad</h1>
+               <form action="#" class="create-ad__form">
+                  <div class="create-ad__inputs">
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">About company</legend>
+                        <input autocomplete="off" type="text" name="company_title" placeholder="Title*" class="input input_background no-empty">
+                        <input autocomplete="off" type="text" name="company_location" placeholder="Location*" class="input input_background no-empty">
+                        <label class="label"><input autocomplete="off" id="companyEmployees" type="text" name="company_employees" placeholder="Number of employees*" class="input number"></label>
+                        <textarea rows="5" name="company_description" class="input input_background textarea no-empty" placeholder="Company description*"></textarea>
+                        <label class="create-ad__file button"><span class="placeholder">Attach company logo*</span><input type="file" id="inputFile" name="company_logo" accept=".svg, .png" class="input-file"></label>
+                     </fieldset>
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">Job details</legend>
+                        <input autocomplete="off" type="text" name="job_title" placeholder="Title*" class="input input_background no-empty">
+                        <input autocomplete="off" type="text" name="job_location" placeholder="Location*" class="input input_background no-empty">
+                        <input autocomplete="off" type="text" name="job_experience" placeholder="Experience*" class="input input_background no-empty">
+                        <input autocomplete="off" type="text" name="job_career_level" placeholder="Career level*" class="input input_background no-empty">
+                        <label class="label"><input autocomplete="off" type="text" name="job_type" placeholder="Job type*" class="input no-empty"></label>
+                        <label class="label"><input autocomplete="off" id="currency" type="text" name="job_salary" placeholder="Salary*" class="input"></label>
+                     </fieldset>
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">Description</legend>
+                        <textarea rows="10" name="job_description" placeholder="Job description*" class="input input_background textarea no-empty"></textarea>
+                     </fieldset>
+                     <fieldset class="create-ad__group">
+                        <legend class="create-ad__legend">Job Responsibilities</legend>
+                        <input added-input type="text" name="job_responsibilities_1" placeholder="Job Responsibilities*" class="input input_background no-empty">
+                        <input added-input type="text" name="job_responsibilities_2" placeholder="Job Responsibilities*" class="input input_background no-empty">
+                        <button add-input-button type="button" class="create-ad__add job-add button">Add Responsibilities</button>
+                     </fieldset>
+                  </div>
+                  <button type="submit" class="create-ad__publish orange-button">Publish</button>
+               </form>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

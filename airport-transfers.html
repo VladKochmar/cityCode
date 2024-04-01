@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Airport Transfers in Hurghada'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="main-block" style="background-image: url(img/airport-transfers/main-block/main_photo.jpg);">
+            <h1 hidden>Airport Transfers in Hurghada</h1>
+            <p class="main-block__label">Airport Transfers</p>
+            <img src="@img/icons/hurghada.svg" alt="Hurghada" class="main-block__icon">
+         </section>
+         <div class="pages-navigation">
+            <div class="pages-navigation__container">
+               <ul class="breadcrumb">
+                  <li><a href="home.html">Main page</a></li>
+                  <li class="current">Airport Transfers in Hurghada</li>
+               </ul>
+            </div>
+         </div>
+         <section class="airport-transfers">
+            <div class="airport-transfers__container">
+               <h2 class="airport-transfers__title airport-transfers__title_center airport-transfers__title_mb article-title">Book an airport transfer</h2>
+               <div class="airport-transfers__body">
+                  <form action="" class="airport-transfers__form form-transfers">
+                     <select placeholder="From (airport, port, address)" name="from" class="form-transfers__select form-transfers__select_from">
+                        <option value="">
+                           From (airport, port, address)
+                        </option>
+                        <optgroup label="Ukraine">
+                           <option value="IEV">Kyiv International Airport (IEV)</option>
+                           <option value="NLV">Mykolaiv International Airport (NLV)</option>
+                           <option value="ODS">Odesa International Airport (ODS)</option>
+                           <option value="HRK">Kharkiv International Airport (HRK)</option>
+                           <option value="KHE">Kherson International Airport (KHE)</option>
+                        </optgroup>
+                        <optgroup label="Poland">
+                           <option value="WAW">Lotnisko Chopina w Warszawie (WAW)</option>
+                           <option value="WRO">Port Lotniczy Wrocław im. Mikołaja Kopernika (WRO)</option>
+                           <option value="IEG">Port lotniczy Zielona Góra-Babimost (IEG)</option>
+                        </optgroup>
+                        <optgroup label="Egypt">
+                           <option value="HRG">Hurghada International Airport (HRG)</option>
+                           <option value="CAI">Cairo International Airport (CAI)</option>
+                           <option value="SSH">Sharm al-Shaykh al-Duwaliyy (SSH)</option>
+                        </optgroup>
+                        <optgroup label="France">
+                           <option value="CDG">Charles de Gaulle International Airport (CDG)</option>
+                           <option value="ORY">Paris Orly Airport (ORY)</option>
+                           <option value="SXB">Strasbourg International Airport (SXB)</option>
+                           <option value="BOD">Bordeaux-Merignac Airport (BOD)</option>
+                        </optgroup>
+                        <optgroup label="Great Britain">
+                           <option value="LGW">London Gatwick (LGW)</option>
+                           <option value="LHR">London Heathrow (LHR)</option>
+                           <option value="EDI">Edinburgh Airport (EDI)</option>
+                           <option value="GLA">Glasgow Airport (GLA)</option>
+                           <option value="BFS">Belfast International (BFS)</option>
+                        </optgroup>
+                     </select>
+                     <select placeholder="To (airport, port, address)" name="to" class="form-transfers__select form-transfers__select_to">
+                        <option value="">
+                           To (airport, port, address)
+                        </option>
+                        <optgroup label="Ukraine">
+                           <option value="IEV">Kyiv International Airport (IEV)</option>
+                           <option value="NLV">Mykolaiv International Airport (NLV)</option>
+                           <option value="ODS">Odesa International Airport (ODS)</option>
+                           <option value="HRK">Kharkiv International Airport (HRK)</option>
+                           <option value="KHE">Kherson International Airport (KHE)</option>
+                        </optgroup>
+                        <optgroup label="Poland">
+                           <option value="WAW">Lotnisko Chopina w Warszawie (WAW)</option>
+                           <option value="WRO">Port Lotniczy Wrocław im. Mikołaja Kopernika (WRO)</option>
+                           <option value="IEG">Port lotniczy Zielona Góra-Babimost (IEG)</option>
+                        </optgroup>
+                        <optgroup label="Egypt">
+                           <option value="HRG">Hurghada International Airport (HRG)</option>
+                           <option value="CAI">Cairo International Airport (CAI)</option>
+                           <option value="SSH">Sharm al-Shaykh al-Duwaliyy (SSH)</option>
+                        </optgroup>
+                        <optgroup label="France">
+                           <option value="CDG">Charles de Gaulle International Airport (CDG)</option>
+                           <option value="ORY">Paris Orly Airport (ORY)</option>
+                           <option value="SXB">Strasbourg International Airport (SXB)</option>
+                           <option value="BOD">Bordeaux-Merignac Airport (BOD)</option>
+                        </optgroup>
+                        <optgroup label="Great Britain">
+                           <option value="LGW">London Gatwick (LGW)</option>
+                           <option value="LHR">London Heathrow (LHR)</option>
+                           <option value="EDI">Edinburgh Airport (EDI)</option>
+                           <option value="GLA">Glasgow Airport (GLA)</option>
+                           <option value="BFS">Belfast International (BFS)</option>
+                        </optgroup>
+                     </select>
+                     <div class="form-transfers__inputs-group">
+                        <label class="form-transfers__label form-transfers__label_calendar"><input id="calendar" type="text" name="calendar" placeholder="Select date" class="form-transfers__input"></label>
+                        <label class="form-transfers__label form-transfers__label_time"><input id="time" type="text" name="time" placeholder="Select time" class="form-transfers__input"></label>
+                        <label class="form-transfers__label form-transfers__label_passengers"><input min="1" max="10" id="passengers" type="text" name="passengers" placeholder="Passengers" class="form-transfers__input number"></label>
+                        <label class="form-transfers__label form-transfers__label_luggage"><input min="0" max="10" id="luggage" type="text" name="luggage_pieces" placeholder="luggage pieces" class="form-transfers__input number"></label>
+                     </div>
+                     <button type="submit" class="button"><img src="@img/icons/login/signIn.svg" alt="SignIn icon">Order</button>
+                  </form>
+                  <div class="airport-transfers__contetn">
+                     <div class="airport-transfers__info info-airport-transfers">
+                        <h4 class="info-airport-transfers__title">Is it easy to find a taxi at Hurghada airport?</h4>
+                        <p class="info-airport-transfers__text">Although there are many taxis and taxi services available at Hurghada Airport, keep in mind that taxis are poorly regulated in Egypt, and the meters can be unreliable. Several travellers have also shared that they had to wait longer than expected or felt that their driver chose longer routes in order to hike up the price of the journey. To be greeted at arrivals and enjoy a stress-free airport transfer that is both fixed-rate and pre-paid, simply book in advance with Welcome Pickups.</p>
+                     </div>
+                     <div class="airport-transfers__info info-airport-transfers">
+                        <h4 class="info-airport-transfers__title">Where will my driver find me?</h4>
+                        <p class="info-airport-transfers__text">The day before you arrive, you will receive an email from us containing your driver’s name, phone number, and a recent photo. Once you land at Hurghada Airport and go through the arrivals gate, your driver will be waiting for you holding up a sign with your name on it so you can’t miss them. You can also contact your driver via the Welcome Pickups app chat feature.</p>
+                     </div>
+                     <div class="airport-transfers__info info-airport-transfers">
+                        <h4 class="info-airport-transfers__title">What happens if my flight is delayed?</h4>
+                        <p class="info-airport-transfers__text">You really don’t need to worry about your flight being delayed or arriving earlier than expected. Flight plans are beyond your control and can change at a moment’s notice. We know this, and that’s why all of our Hurghada airport taxi drivers receive live updates on your plane’s arrival time. That way, we can guarantee that your driver will be there waiting for you when you arrive, at no extra cost.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'News Catalog'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="main-block" style="background-image: url(img/news-catalog/main-block/main-photo.jpg);">
+            <h1 hidden>news in hurghada</h1>
+            <p class="main-block__label">NEWS IN</p>
+            <img src="@img/icons/hurghada.svg" alt="Hurghada" class="main-block__icon">
+         </section>
+         <div class="pages-navigation">
+            <div class="pages-navigation__container">
+               <ul class="breadcrumb">
+                  <li><a href="home.html">Main page</a></li>
+                  <li class="current">News in Hurghada</li>
+               </ul>
+            </div>
+         </div>
+         <section class="articles-filter">
+            <div class="articles-filter__container">
+               <h2 class="articles-filter__title article-title">Choose what you interesting</h2>
+               <ul class="articles-filter__list">
+                  <li class="articles-filter__item"><button type="button" class="type-block">hot topics</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">World</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">Business</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">Sport</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">Football</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">Tchnology</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">Science</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">lifestyle</button></li>
+                  <li class="articles-filter__item"><button type="button" class="type-block">Industry sectors</button></li>
+               </ul>
+            </div>
+         </section>
+         <div class="news-catalog">
+            <div class="news-catalog__container">
+               <div class="news-catalog__body">
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">Egypt- Hurghada receives 1st tourist group from Berlin</h3>
+                           <p class="article-news-item__text">Tourist Office of the Egyptian Tourism Promotion Board in Egypt's Red Sea coastal city of Hurghada received...</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image01.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">The historic city where homes sell for an extra £70,000</h3>
+                           <p class="article-news-item__text">Edward Stoyle, of Savills estate agents, said York offered a reasonable commute to London and other cities to the north.</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image02.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">Moderate earthquake of magnitude 4.6 just reported 86 km northwest of Hurghada, Egypt</h3>
+                           <p class="article-news-item__text">Edward Stoyle, of Savills estate agents, said York offered a reasonable commute to London and other cities to the north.</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image03.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+                  <article class="article-news-item">
+                     <a href="news-page.html" class="article-news-item__wrapper">
+                        <div class="article-news-item__content">
+                           <h3 class="article-news-item__title article-title">Air Cairo starts new flights to Hurghada from Budapest, Milan and Naples</h3>
+                           <p class="article-news-item__text">Budapest International Airport announced that the low-cost Egyptian company Air Cairo has taken nearly 40,000 one-way seats to Egypt from next year’s reservations.</p>
+                           <div class="article-news-item__date">
+                              <img src="@img/icons/calendar.svg" alt="Calendar icon">
+                              <time datetime="2022-12-20T15:16:06">12/20/2022 3:16:06 PM</time>
+                           </div>
+                        </div>
+                        <img data-src="@img/news-catalog/news-catalog/image04.jpg" alt="Beach with rocks" class="article-news-item__bg-image">
+                     </a>
+                  </article>
+               </div>
+            </div>
+         </div>
+         <div class="catalog-actions">
+            <div class="catalog-actions__container">
+               <button type="button" class="catalog-actions__show-more button"><img src="@img/icons/arrow-circle.svg" alt="Circle arrow">Show more</button>
+               <div class="catalog-actions__controls">
+                  <a href="#" class="catalog-actions__prev controls-item">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                        <path d="M9 1L3.82842 6.17157C2.49509 7.50491 1.82843 8.17157 1.82843 9C1.82843 9.82843 2.49509 10.4951 3.82842 11.8284L9 17" stroke="#FF703E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </a>
+                  <ul class="catalog-actions__pagination">
+                     <li class="catalog-actions__item controls-item current"><a href="#">1</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">2</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">3</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">4</a></li>
+                     <li class="catalog-actions__item controls-item"><a>...</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">82</a></li>
+                  </ul>
+                  <a href="#" class="catalog-actions__next controls-item">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                        <path d="M1 17L6.17158 11.8284C7.50491 10.4951 8.17157 9.82843 8.17157 9C8.17157 8.17157 7.50491 7.50491 6.17158 6.17158L1 1" stroke="#FF703E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="catalog-article">
+            <div class="catalog-article__container">
+               <section>
+                  <h2>News Hurghada</h2>
+                  <p>With its' mild weather and sunshine almost all year-round, sprawling beaches and exquisite coral reefs, Hurghada is one of the most outstanding tourist cities in Egypt and a major tourist hub for domestic and foreign tourists alike. Its' natural islands make up a virgin environment for a variety of rare flora and fauna, offering a perfect setting for enjoying recreational sports such as land hunting and fishing.</p>
+                  <p>Once just a lay-by for fishermen and now a burgeoning resort town, Hurghada is cuddled between the Sahara and the Red Sea. Plucked from limbo and pushed into the limelight, it's an aquatic wonderland for sailors, divers, sunbathers, and desert dwellers. With historic districts, traditi onal markets, renowned diving centres, and desert safaris, the town has emerged as an ideal destination for underwater adventures.</p>
+                  <p>Today, it is a busy, sprawling town divided into three main areas, the Old Town (al Dahar) to the north, Saqala, the city centre to the south and the modern Marina with its' waterside cafes and restaurants. El Dahar is where the town's largest bazaar, the post office and the long-distance bus station are located.</p>
+               </section>
+               <dl>
+                  <dt>Highlights</dt>
+                  <dd>
+                     <ul>
+                        <li>El Dahar (Old Town)</li>
+                        <li>Marina boulevard</li>
+                        <li>Hurghada Museum</li>
+                        <li>Grand Aquarium</li>
+                        <li>Mini Egypt Park</li>
+                        <li>St. Shenouda's Coptic Orthodox church</li>
+                        <li>El Saqala (City centre)</li>
+                     </ul>
+                  </dd>
+               </dl>
+               <section>
+                  <h2>When to Go</h2>
+                  <p>With pleasant weather and warm waters, Hurghada is a year-round destination. In summers, Egyptians – from Cairo and Luxor – flock here to escape the heat. The best time to travel in Hurghada is from April to June and September to November. During these periods, vacationers can expect warm sunny weather that is tolerable. We recommend desert safaris into the sandy terrains where you can learn the exotic traditions of the Bedouin people. They also usually include a BBQ dinner, camel rides across biblical plains and a memorable stargazing experience.</p>
+                  <p>Day trips to Sahl Hasheesh, Makadi Bay, Safaga, and El Gouna, the nearby touristic resorts with diving spots and private golf courses. Alternatively, you can take boat tours to offshore islands like Sheduan Island, Orange Bay Island, and Abu Ramada Island.</p>
+               </section>
+            </div>
+         </div>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>

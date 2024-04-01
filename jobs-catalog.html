@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": 'Job'
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="main">
+         <section class="main-block" style="background-image: url(img/jobs-catalog/main-page/main_photo.jpg);">
+            <h1 hidden>Job in hurghada</h1>
+            <p class="main-block__label">Job</p>
+            <img src="@img/icons/hurghada.svg" alt="Hurghada" class="main-block__icon">
+         </section>
+         <div class="pages-navigation">
+            <div class="pages-navigation__container">
+               <ul class="breadcrumb">
+                  <li><a href="home.html">Main page</a></li>
+                  <li class="current">Job in Hurghada</li>
+               </ul>
+            </div>
+         </div>
+         <section class="catalog-filter">
+            <div class="catalog-filter__container">
+               <h2 class="catalog-filter__title article-title">Find your work</h2>
+               <form action="#" class="catalog-filter__form form-catalog-filter">
+                  <fieldset class="form-catalog-filter__fieldset">
+                     <legend class="form-catalog-filter__legend">Filters</legend>
+                     <div class="form-catalog-filter__row">
+                        <select name="level" placeholder="Level" class="form-catalog-filter__select">
+                           <option value="">Level</option>
+                           <option value="Career level">Career level</option>
+                           <option value="No experience">No experience</option>
+                        </select>
+                        <select name="job_category" placeholder="Job category" class="form-catalog-filter__select">
+                           <option value="">Job category</option>
+                           <option value="Web development">Web development</option>
+                           <option value="Graphic design">Graphic design</option>
+                           <option value="Copywriting and content development">Copywriting and content development</option>
+                           <option value="Marketing and advertising">Marketing and advertising</option>
+                        </select>
+                        <select name="job_type" placeholder="Job type" class="form-catalog-filter__select">
+                           <option value="">Job type</option>
+                           <option value="System administrator">System administrator</option>
+                           <option value="Animator">Animator</option>
+                           <option value="Marketer">Marketer</option>
+                           <option value="Accountant">Accountant</option>
+                        </select>
+                        <select name="type_of_employment" placeholder="Type of employment" class="form-catalog-filter__select">
+                           <option value="">Type of employment</option>
+                           <option value="Permanent">Permanent</option>
+                           <option value="Temporary">Temporary</option>
+                        </select>
+                        <select name="salary" placeholder="Salary" class="form-catalog-filter__select">
+                           <option value="">Salary</option>
+                           <option value="500-1500">500$ - 1500$</option>
+                           <option value="1500-3500">1500$ - 3500$</option>
+                           <option value="3500-5000">3500$ - 5000$</option>
+                           <option value="5000-7000">5000$ - 7000$</option>
+                        </select>
+                        <button type="submit" class="form-catalog-filter__button button">Search</button>
+                     </div>
+                     <div class="form-catalog-filter__row form-catalog-filter__row_flex">
+                        <a href="job-add.html" class="form-catalog-filter__add orange-button">Add ad</a>
+                        <a href="job-add.html" class="form-catalog-filter__add form-catalog-filter__add_mobile orange-button">Add</a>
+                        <div class="form-catalog-filter__sorted-by">
+                           <label>
+                              Sorted by:
+                              <select name="sorted-by" class="sorted-by">
+                                 <option value="Newest">Newest</option>
+                                 <option value="Cheapest">Cheapest</option>
+                              </select>
+                           </label>
+                           <div class="form-catalog-filter__result">Results:<span>142</span></div>
+                        </div>
+                     </div>
+                  </fieldset>
+               </form>
+            </div>
+         </section>
+         <div class="jobs-catalog">
+            <div class="jobs-catalog__container">
+               <div class="jobs-catalog__body">
+                  <div class="jobs-catalog__item">
+                     <article class="job-advertisement">
+                        <div class="job-advertisement__header">
+                           <div class="job-advertisement__info">
+                              <h3 class="job-advertisement__title"><a href="jobs-page.html">Senior System Administrator</a></h3>
+                              <address class="job-advertisement__location"><img src="@img/icons/jobs/mapPinLine.svg" alt="Map icon">Caduceus Lane - Hurghada, Red Sea, Egypt</address>
+                              <div class="job-advertisement__time">2 days ago</div>
+                           </div>
+                           <img class="job-advertisement__logo" src="@img/jobs-catalog/reliable_robotics.svg" alt="Reliable robotics logo">
+                        </div>
+                        <div class="job-advertisement__type type-block type-block_inline-block">Full time</div>
+                        <p class="job-advertisement__text">BetterMe is a company that distributes affordable digital health products that allow people of different age and physical abilities. Our zastosunki were installed over 100 million times all over the world.</p>
+                     </article>
+                  </div>
+                  <div class="jobs-catalog__item">
+                     <article class="job-advertisement">
+                        <div class="job-advertisement__header">
+                           <div class="job-advertisement__info">
+                              <h3 class="job-advertisement__title"><a href="jobs-page.html">Account Executive</a></h3>
+                              <address class="job-advertisement__location"><img src="@img/icons/jobs/mapPinLine.svg" alt="Map icon">Hurghada, Red Sea, Egypt</address>
+                              <div class="job-advertisement__time">3 days ago</div>
+                           </div>
+                           <img class="job-advertisement__logo" src="@img/jobs-catalog/healthfirst.svg" alt="Healthfirst logo">
+                        </div>
+                        <div class="job-advertisement__type type-block type-block_inline-block">Part time</div>
+                        <p class="job-advertisement__text">Participer à la croissance de notre Chiffre d'Affaires et développer notre portefeuille client sur le Small & Middle Business (SMB)</p>
+                     </article>
+                  </div>
+                  <div class="jobs-catalog__item">
+                     <article class="job-advertisement">
+                        <div class="job-advertisement__header">
+                           <div class="job-advertisement__info">
+                              <h3 class="job-advertisement__title"><a href="jobs-page.html">Video Optimization Manager</a></h3>
+                              <address class="job-advertisement__location"><img src="@img/icons/jobs/mapPinLine.svg" alt="Map icon">Hurghada Lane, Red Sea, Egypt</address>
+                              <div class="job-advertisement__time">5 days ago</div>
+                           </div>
+                           <img class="job-advertisement__logo" src="@img/jobs-catalog/crowdstrike.svg" alt="Crowdstrike logo">
+                        </div>
+                        <div class="job-advertisement__type type-block type-block_inline-block">Part time</div>
+                        <p class="job-advertisement__text">We’re one of the world’s largest content recommendation platforms, delighting audiences with engaging, personalized content recommendations while serving.</p>
+                     </article>
+                  </div>
+                  <div class="jobs-catalog__item">
+                     <article class="job-advertisement">
+                        <div class="job-advertisement__header">
+                           <div class="job-advertisement__info">
+                              <h3 class="job-advertisement__title"><a href="jobs-page.html">CRM Specialist</a></h3>
+                              <address class="job-advertisement__location"><img src="@img/icons/jobs/mapPinLine.svg" alt="Map icon">Hurghada, Red Sea, Egypt</address>
+                              <div class="job-advertisement__time">7 days ago</div>
+                           </div>
+                           <img class="job-advertisement__logo" src="@img/jobs-catalog/utbrain.svg" alt="Utbrain logo">
+                        </div>
+                        <div class="job-advertisement__type type-block type-block_inline-block">Part time</div>
+                        <p class="job-advertisement__text">Sense of massive amounts of transactional and engagement data so that they can understand their customers and provide experiences that delight while boosting the consumers and move.</p>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="catalog-actions">
+            <div class="catalog-actions__container">
+               <button type="button" class="catalog-actions__show-more button"><img src="@img/icons/arrow-circle.svg" alt="Circle arrow">Show more</button>
+               <div class="catalog-actions__controls">
+                  <a href="#" class="catalog-actions__prev controls-item">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                        <path d="M9 1L3.82842 6.17157C2.49509 7.50491 1.82843 8.17157 1.82843 9C1.82843 9.82843 2.49509 10.4951 3.82842 11.8284L9 17" stroke="#FF703E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </a>
+                  <ul class="catalog-actions__pagination">
+                     <li class="catalog-actions__item controls-item current"><a href="#">1</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">2</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">3</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">4</a></li>
+                     <li class="catalog-actions__item controls-item"><a>...</a></li>
+                     <li class="catalog-actions__item controls-item"><a href="#">12</a></li>
+                  </ul>
+                  <a href="#" class="catalog-actions__next controls-item">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+                        <path d="M1 17L6.17158 11.8284C7.50491 10.4951 8.17157 9.82843 8.17157 9C8.17157 8.17157 7.50491 7.50491 6.17158 6.17158L1 1" stroke="#FF703E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="catalog-article">
+            <div class="catalog-article__container">
+               <section>
+                  <h2>Work in Hurghada</h2>
+                  <p>With its' mild weather and sunshine almost all year-round, sprawling beaches and exquisite coral reefs, Hurghada is one of the most outstanding tourist cities in Egypt and a major tourist hub for domestic and foreign tourists alike. Its' natural islands make up a virgin environment for a variety of rare flora and fauna, offering a perfect setting for enjoying recreational sports such as land hunting and fishing.</p>
+                  <p>Once just a lay-by for fishermen and now a burgeoning resort town, Hurghada is cuddled between the Sahara and the Red Sea. Plucked from limbo and pushed into the limelight, it's an aquatic wonderland for sailors, divers, sunbathers, and desert dwellers. With historic districts, traditi onal markets, renowned diving centres, and desert safaris, the town has emerged as an ideal destination for underwater adventures.</p>
+                  <p>Today, it is a busy, sprawling town divided into three main areas, the Old Town (al Dahar) to the north, Saqala, the city centre to the south and the modern Marina with its' waterside cafes and restaurants. El Dahar is where the town's largest bazaar, the post office and the long-distance bus station are located.</p>
+               </section>
+               <dl>
+                  <dt>Highlights</dt>
+                  <dd>
+                     <ul>
+                        <li>El Dahar (Old Town)</li>
+                        <li>Marina boulevard</li>
+                        <li>Hurghada Museum</li>
+                        <li>Grand Aquarium</li>
+                        <li>Mini Egypt Park</li>
+                        <li>St. Shenouda's Coptic Orthodox church</li>
+                        <li>El Saqala (City centre)</li>
+                     </ul>
+                  </dd>
+               </dl>
+               <section>
+                  <h2>When to Go</h2>
+                  <p>With pleasant weather and warm waters, Hurghada is a year-round destination. In summers, Egyptians – from Cairo and Luxor – flock here to escape the heat. The best time to travel in Hurghada is from April to June and September to November. During these periods, vacationers can expect warm sunny weather that is tolerable. We recommend desert safaris into the sandy terrains where you can learn the exotic traditions of the Bedouin people. They also usually include a BBQ dinner, camel rides across biblical plains and a memorable stargazing experience.</p>
+                  <p>Day trips to Sahl Hasheesh, Makadi Bay, Safaga, and El Gouna, the nearby touristic resorts with diving spots and private golf courses. Alternatively, you can take boat tours to offshore islands like Sheduan Island, Orange Bay Island, and Abu Ramada Island.</p>
+               </section>
+            </div>
+         </div>
+      </main>
+      @@include('html/footer.html', {})
+   </div>
+   <script src="js/app.min.js"></script>
+</body>
+
+</html>
