@@ -1,0 +1,120 @@
+.footer {
+   background-color: $gray75;
+   // .footer__container
+   &__container {
+   }
+   // .footer__top
+   &__top {
+      color: $white;
+      border-bottom: 1.5px solid $whiteED;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 3.75rem 8.125rem 3.4375rem 6.875rem;
+      @media (max-width: 1000px) {
+         padding: 2.5rem 5rem 3.4375rem;
+      }
+      @media (max-width: 700px) {
+         padding: 2.5rem 0.625rem 3.4375rem;
+      }
+      @media (max-width: 480px) {
+         flex-wrap: wrap;
+      }
+   }
+   // .footer__menu
+   &__menu {
+      display: flex;
+      gap: 2rem 6.25rem;
+      @media (max-width: 700px) {
+         gap: 2rem 2.5rem;
+      }
+   }
+   // .footer__block
+   &__block {
+   }
+   // .footer__title
+   &__title {
+      color: $gray9E;
+      font-size: 1.25rem;
+      font-family: Oswald;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: 1rem;
+      }
+   }
+   // .footer__list
+   &__list {
+      display: grid;
+      gap: 0.5rem 0;
+   }
+   // .footer__item
+   &__item {
+      font-size: 0.875rem;
+      a {
+         transition: color 0.3s ease 0s;
+         @media (any-hover: hover) {
+            &:hover {
+               color: $orange;
+            }
+         }
+      }
+   }
+   // .footer__contacts
+   &__contacts {
+   }
+   // .footer__description-list
+   &__description-list {
+   }
+   // .footer__bottom
+   &__bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 0 0.625rem;
+      font-size: 0.75rem;
+      font-weight: 400;
+      padding: 0.75rem 0;
+   }
+   // .footer__copyright
+   &__copyright {
+      color: $grayE0;
+      @media (max-width: 700px) {
+         font-size: 0.625rem;
+      }
+   }
+   // .footer__author
+   &__author {
+      color: $white;
+   }
+}
+.description-list {
+   font-family: Oswald;
+   font-weight: 400;
+   text-transform: uppercase;
+   display: grid;
+   gap: 0.625rem 0;
+   // .description-list__item
+   &__item {
+   }
+   // .description-list__title
+   &__title {
+      color: $white;
+      font-size: 0.75rem;
+      font-family: Oswald;
+      font-weight: 400;
+      letter-spacing: 1.2px;
+   }
+   // .description-list__text
+   &__text {
+      color: $blackA1;
+      font-size: 0.875rem;
+      letter-spacing: 1.4px;
+   }
+   // .description-list__social
+   &__social {
+      display: flex;
+      gap: 0 0.625rem;
+      padding-top: 0.5rem;
+   }
+}

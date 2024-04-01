@@ -1,0 +1,94 @@
+.job-advertisement {
+   height: 100%;
+   background-color: $whiteF5;
+   padding: 1.25rem 1.875rem;
+   // .job-advertisement_padding
+   &_padding {
+      padding: 1.25rem;
+   }
+   // .job-advertisement_fz
+   &_fz {
+      font-size: 0.875rem;
+   }
+   @media (max-width: 700px) {
+      display: grid;
+      align-items: start;
+      grid-template-columns: 1fr auto;
+      gap: 0.9375rem;
+      padding: 0.625rem;
+      font-size: 0.75rem;
+   }
+   // .job-advertisement__header
+   &__header {
+      @media (min-width: 700px) {
+         display: flex;
+         justify-content: space-between;
+         gap: 0 0.625rem;
+         &:not(:last-child) {
+            margin-bottom: 0.9375rem;
+         }
+      }
+   }
+   // .job-advertisement__info
+   &__info {
+   }
+   // .job-advertisement__title
+   &__title {
+      font-size: 1.25rem;
+      line-height: 130%;
+      &:not(:last-child) {
+         margin-bottom: 0.3125rem;
+      }
+      @media (max-width: 700px) {
+         font-size: 1rem;
+      }
+   }
+   // .job-advertisement__location
+   &__location {
+      color: $gray75;
+      display: flex;
+      align-items: center;
+      font-style: normal;
+      gap: 0 0.625rem;
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .job-advertisement__time
+   &__time {
+      color: $gray9E;
+   }
+   // .job-advertisement__logo
+   &__logo {
+      align-self: flex-start;
+      @media (max-width: 700px) {
+         display: none;
+      }
+   }
+   // .job-advertisement__type
+   &__type {
+      @media (min-width: 700px) {
+         &:not(:last-child) {
+            margin-bottom: 1.25rem;
+         }
+      }
+   }
+   // .job-advertisement__text
+   &__text {
+      @media (max-width: 700px) {
+         grid-column: span 2;
+      }
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .job-advertisement__buttons
+   &__buttons {
+      display: inline-flex;
+      gap: 0 1.875rem;
+   }
+   // .job-advertisement__button
+   &__button {
+      color: $orange;
+   }
+}

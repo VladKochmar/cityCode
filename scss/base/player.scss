@@ -1,0 +1,75 @@
+@import 'player/plyr';
+
+.plyr {
+   height: 100%;
+   .plyr__video-wrapper {
+      background: transparent;
+   }
+}
+
+.welcome-to__slide_first {
+   .plyr__control--overlaid {
+      top: 65%;
+      @media (max-width: 1000px) {
+         top: 60%;
+      }
+   }
+}
+
+.plyr--video.plyr--stopped .plyr__controls {
+   opacity: 0;
+   pointer-events: none;
+   transform: translateY(100%);
+}
+
+.plyr__control--overlaid {
+   color: $orange;
+   width: 6.625rem !important;
+   height: 6.625rem;
+   background: rgba(245, 245, 245, 0.2);
+   border: 3px solid $white;
+   opacity: 1;
+   padding: calc(var(--plyr-control-spacing, 10px) * 3.2);
+   svg {
+      width: 2.375rem;
+      height: 2.25rem;
+   }
+   @media (max-width: 1000px) {
+      width: 4.25rem !important;
+      height: 4.25rem;
+      padding: calc(var(--plyr-control-spacing, 10px) * 2);
+      svg {
+         width: 1.375rem;
+         height: 1.375rem;
+      }
+   }
+   @media (max-width: 479.98px) {
+      width: 2.5rem !important;
+      height: 2.5rem;
+      padding: calc(var(--plyr-control-spacing, 10px) * 1);
+      svg {
+         width: 0.75rem;
+         height: 0.75rem;
+      }
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         background: $orange !important;
+      }
+   }
+}
+.plyr__control {
+   @media (any-hover: hover) {
+      &:hover {
+         background: $orange !important;
+      }
+   }
+}
+
+.plyr__poster {
+   background-size: cover;
+}
+
+.plyr--full-ui input[type='range'] {
+   color: $orange;
+}

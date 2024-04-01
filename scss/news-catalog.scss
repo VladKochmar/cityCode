@@ -1,0 +1,34 @@
+.pages-navigation {
+   padding: 0.9375rem 0 1.25rem;
+   // .pages-navigation__container
+   &__container {
+   }
+}
+
+.news-catalog {
+   padding: 1.25rem 0 1.875rem;
+   @media (max-width: 1000px) {
+      padding: 1.25rem 0;
+   }
+   // .news-catalog_padding
+   &_padding {
+      padding: 1.875rem 0 5rem;
+      @media (max-width: 1000px) {
+         padding: 1.875rem 0 3.75rem;
+      }
+   }
+   // .news-catalog__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+   }
+   // .news-catalog__container
+   &__container {
+   }
+   // .news-catalog__body
+   &__body {
+      display: grid;
+      gap: 2.5rem 0;
+   }
+}

@@ -1,0 +1,169 @@
+.reviews {
+   // .reviews__container
+   &__container {
+   }
+   // .reviews__header
+   &__header {
+      border-top: 1px solid $whiteED;
+      padding-top: 3.125rem;
+      text-align: center;
+      display: grid;
+      justify-items: center;
+      // .reviews__header_padding-top
+      &_padding-top {
+         padding-top: 1.875rem;
+      }
+      // .reviews__header_no-border
+      &_no-border {
+         border-top: none;
+      }
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   // .reviews__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   // .reviews__overal-rating
+   &__overal-rating {
+      p {
+         color: $gray9E;
+         font-family: Oswald;
+         font-size: 1.25rem;
+         font-weight: 400;
+         line-height: 1.4;
+         letter-spacing: 0.4px;
+         text-transform: uppercase;
+         &:not(:last-child) {
+            margin-bottom: 0.625rem;
+         }
+      }
+   }
+   // .reviews__comments
+   &__comments {
+      display: grid;
+      gap: 1.25rem 0;
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   // .reviews__buttons
+   &__buttons {
+      display: flex;
+      justify-content: center;
+      gap: 0.625rem 1.25rem;
+      @media (max-width: 700px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+   // .reviews__show-more
+   &__show-more {
+      max-width: 22.5rem;
+      padding-left: 2.125rem;
+      &::before {
+         content: url('../img/icons/arrow-circle.svg');
+         max-width: 1.5rem;
+         max-height: 1.5rem;
+         flex: 0 0 1.5rem;
+      }
+   }
+   // .reviews__add
+   &__add {
+      width: 100%;
+      max-width: 22.5rem;
+      &::before {
+         content: url('../img/icons/login/signIn_white.svg');
+         max-width: 1.5rem;
+         max-height: 1.5rem;
+         flex: 0 0 1.5rem;
+      }
+   }
+}
+.comment {
+   background: $white;
+   box-shadow: 1px 2px 15px 1px rgba(0, 0, 0, 0.1);
+   padding: 1.25rem;
+   // .comment__header
+   &__header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0 0.625rem;
+   }
+   // .comment__author
+   &__author {
+      font-size: 1.25rem;
+      line-height: 1.3;
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .comment__actions
+   &__actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 1.25rem;
+   }
+   // .comment__like
+   &__like {
+      color: $orange;
+      padding-left: 1.875rem;
+      background: url('../img/icons/actions/like.svg') 0 50% no-repeat;
+   }
+   // .comment__control
+   &__control {
+      width: 1.5rem;
+      height: 1.5rem;
+      flex: 0 0 1.5rem;
+      background: url('../img/icons/actions/more-vertical.svg') 50% 50% no-repeat;
+   }
+   // .comment__rating
+   &__rating {
+      display: flex;
+      gap: 0 0.5rem;
+      img {
+         width: 1.5rem;
+         height: 1.5rem;
+      }
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .comment__date
+   &__date {
+      display: inline-block;
+      color: $gray9E;
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .comment__text
+   &__text {
+      font-weight: 400;
+      p {
+         &:not(:last-child) {
+            margin-bottom: 1.25rem;
+         }
+      }
+   }
+   // .comment__more
+   &__more {
+      color: $orange;
+   }
+   // .comment__photos
+   &__photos {
+      display: flex;
+      gap: 0.625rem;
+      img {
+         max-width: 100%;
+      }
+   }
+}
+.rating {
+   // .rating__date
+   &__date {
+   }
+}

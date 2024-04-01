@@ -1,0 +1,114 @@
+.swiper-articles {
+   overflow: visible;
+   // .swiper-articles__wrapper
+   &__wrapper {
+   }
+   // .swiper-articles__slide
+   &__slide {
+   }
+}
+.slide-article {
+   // .slide-article__header
+   &__header {
+      position: relative;
+      display: grid;
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+         @media (max-width: 1000px) {
+            margin-bottom: 0.625rem;
+         }
+      }
+   }
+   // .slide-article__image-ibg
+   &__image-ibg {
+      position: relative;
+      padding-top: 87.45%;
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+      }
+   }
+   // .slide-article__actions
+   &__actions {
+   }
+   // .slide-article__body
+   &__body {
+   }
+   // .slide-article__rating
+   &__rating {
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+         @media (max-width: 1000px) {
+            margin-bottom: 0.625rem;
+         }
+      }
+   }
+   // .slide-article__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .slide-article__text
+   &__text {
+      color: $gray75;
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+      @media (max-width: 1000px) {
+         font-size: 0.875rem;
+         &:not(:last-child) {
+            margin-bottom: 1.25rem;
+         }
+      }
+   }
+   // .slide-article__list
+   &__list {
+      display: grid;
+      gap: 0.625rem 0;
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+         @media (max-width: 1000px) {
+            margin-bottom: 1.25rem;
+         }
+      }
+   }
+   // .slide-article__item
+   &__item {
+      color: $gray61;
+      display: inline-flex;
+      gap: 0 0.625rem;
+      img {
+         flex: 0 0 1.5rem;
+         max-width: 1.5rem;
+      }
+   }
+   // .slide-article__bottom
+   &__bottom {
+      display: flex;
+      align-items: center;
+      gap: 0 1.25rem;
+   }
+   // .slide-article__button
+   &__button {
+      flex: 0 1 23.125rem;
+      @media (max-width: 1000px) {
+         flex: 0 1 16.25rem;
+      }
+   }
+   // .slide-article__price
+   &__price {
+      flex: 1 1 auto;
+      text-align: center;
+      span {
+         @media (max-width: 1000px) {
+            display: none;
+         }
+      }
+   }
+}

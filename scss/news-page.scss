@@ -1,0 +1,127 @@
+.news-block {
+   padding-bottom: 1.875rem;
+   // .news-block__container
+   &__container {
+      display: flex;
+      gap: 2.5rem;
+      @media (max-width: 1000px) {
+         flex-direction: column;
+      }
+   }
+}
+.news-article {
+   flex: 0 1 80rem;
+   // .news-article__header
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 1.25rem;
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+   }
+   // .news-article__title
+   &__title {
+   }
+   // .news-article__date
+   &__date {
+      color: $grayC2;
+      padding-left: 2.5rem;
+      background: url('../img/icons/calendar.svg') 0 0 no-repeat;
+   }
+   // .news-article__body
+   &__body {
+      & > * {
+         &:not(:last-child) {
+            margin-bottom: 1.875rem;
+         }
+      }
+      img {
+         max-width: 100%;
+      }
+      p {
+         &:not(:last-child) {
+            margin-bottom: 1.25rem;
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: 3.125rem;
+      }
+   }
+   // .news-article__social-list
+   &__social-list {
+      display: flex;
+      gap: 0 1.5625rem;
+   }
+   // .news-article__item
+   &__item {
+   }
+}
+.news-sidebar {
+   @media (min-width: 1000px) {
+      flex: 0 1 35rem;
+      padding-left: 2.5rem;
+      border-left: 2px solid $whiteED;
+   }
+   & > * {
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+   }
+   // .news-sidebar__title
+   &__title {
+      font-family: Oswald;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+   }
+   // .news-sidebar__body
+   &__body {
+      @media (min-width: 1000px) {
+         & > * {
+            &:not(:last-child) {
+               margin-bottom: 1.875rem;
+            }
+         }
+      }
+      @media (max-width: 1000px) and (min-width: 700px) {
+         margin: 0 -0.9375rem;
+      }
+      @media (max-width: 1000px) {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1.875rem 0;
+      }
+   }
+   // .news-sidebar__item
+   &__item {
+      @media (max-width: 1000px) and (min-width: 700px) {
+         flex: 0 1 50%;
+         padding: 0 0.9375rem;
+         min-width: 20.3125rem;
+      }
+      display: grid;
+   }
+   // .news-sidebar__link
+   &__link {
+      &:not(:last-child) {
+         margin-bottom: 0.3125rem;
+      }
+   }
+   // .news-sidebar__date
+   &__date {
+      color: $gray9E;
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .news-sidebar__image
+   &__image {
+      img {
+         max-width: 100%;
+      }
+   }
+}

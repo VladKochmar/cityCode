@@ -1,0 +1,689 @@
+.personal-area {
+   padding: 5.9375rem 0 5rem;
+   // .personal-area__container
+   &__container {
+   }
+   // .personal-area__body
+   &__body {
+      display: flex;
+      gap: 2.5rem;
+      @media (max-width: 700px) {
+         flex-direction: column;
+      }
+   }
+   // .personal-area__sidebar
+   &__sidebar {
+      @media (min-width: 700.98px) {
+         flex: 0 1 16.625rem;
+      }
+      @media (max-width: 700px) {
+         align-self: center;
+      }
+   }
+   // .personal-area__content
+   &__content {
+      @media (min-width: 700.98px) {
+         flex: 1 1 auto;
+      }
+      // .personal-area__content_ads
+      &_ads {
+         @media (max-width: 1200px) and (min-width: 700.98px) {
+            flex: 0 1 47.5rem;
+         }
+      }
+      // .personal-area__content_favorite
+      &_favorite {
+         min-width: 0;
+         @media (min-width: 700.98px) {
+            flex: 0 1 100.125rem;
+         }
+      }
+   }
+   // .personal-area__form
+   &__form {
+   }
+}
+.menu-personal-area {
+   // .menu-personal-area__list
+   &__list {
+      li {
+         color: $gray75;
+         font-weight: 400;
+         padding-left: 2.25rem;
+         white-space: nowrap;
+         &.current {
+            color: $mainColor;
+            font-weight: 500;
+         }
+         * {
+            transition: color 0.3s ease 0s;
+            @media (any-hover: hover) {
+               &:hover {
+                  color: $orange;
+               }
+            }
+         }
+         &:not(:last-child) {
+            margin-bottom: 1.25rem;
+         }
+      }
+   }
+   // .menu-personal-area__general
+   &__general {
+      background: url('../img/icons/personal-area/info.svg') left center no-repeat;
+   }
+   // .menu-personal-area__messages
+   &__messages {
+      background: url('../img/icons/personal-area/mail.svg') left center no-repeat;
+   }
+   // .menu-personal-area__real-estate
+   &__real-estate {
+      background: url('../img/icons/personal-area/house.svg') left center no-repeat;
+   }
+   // .menu-personal-area__job
+   &__job {
+      background: url('../img/icons/personal-area/tree-map-up.svg') left center no-repeat;
+   }
+   // .menu-personal-area__favorite
+   &__favorite {
+      background: url('../img/icons/personal-area/heart.svg') left center no-repeat;
+   }
+   // .menu-personal-area__log-out
+   &__log-out {
+      background: url('../img/icons/personal-area/log-out.svg') left center no-repeat;
+   }
+}
+.form-personal-area {
+   // .form-personal-area__block
+   &__block {
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   // .form-personal-area__title
+   &__title {
+      color: $gray75;
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .form-personal-area__input
+   &__input {
+      display: block;
+      width: 100%;
+      @media (min-width: 700.98px) {
+         max-width: 25.625rem;
+      }
+      &:not(:last-child) {
+         margin-bottom: 0.9375rem;
+      }
+   }
+   // .form-personal-area__button
+   &__button {
+      width: 100%;
+      @media (min-width: 700.98px) {
+         max-width: 25.625rem;
+      }
+   }
+}
+
+.real-estate-ads {
+   // .real-estate-ads__total
+   &__total {
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .real-estate-ads__body
+   &__body {
+   }
+   // .real-estate-ads__articles
+   &__articles {
+      display: grid;
+      gap: 2.5rem 0;
+      &:not(:last-child) {
+         margin-bottom: 3.75rem;
+      }
+   }
+}
+.real-estate-ad {
+   display: flex;
+   gap: 1.25rem 1.875rem;
+   @media (max-width: 1200px) {
+      flex-direction: column;
+   }
+   // .real-estate-ad__image-ibg
+   &__image-ibg {
+      position: relative;
+      @media (min-width: 1200.98px) {
+         flex: 0 1 40.375rem;
+      }
+      @media (max-width: 1200px) {
+         padding-top: 47.368421%; /* 360/760 */
+      }
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         object-position: center;
+      }
+   }
+   // .real-estate-ad__body
+   &__body {
+      @media (min-width: 1200.98px) {
+         flex: 0 1 57.125rem;
+      }
+   }
+   // .real-estate-ad__rating
+   &__rating {
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .real-estate-ad__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .real-estate-ad__text
+   &__text {
+      &:not(:last-child) {
+         margin-bottom: 1.5625rem;
+      }
+      @media (max-width: 1200px) {
+         &:not(:last-child) {
+            margin-bottom: 0.9375rem;
+         }
+      }
+   }
+   // .real-estate-ad__price
+   &__price {
+      &:not(:last-child) {
+         margin-bottom: 6.5rem;
+      }
+      @media (max-width: 1200px) {
+         &:not(:last-child) {
+            margin-bottom: 1.25rem;
+         }
+      }
+   }
+   // .real-estate-ad__actions
+   &__actions {
+      display: inline-flex;
+      gap: 0 1.875rem;
+   }
+   // .real-estate-ad__button
+   &__button {
+      color: $orange;
+      font-size: 1.25rem;
+      line-height: 1.3;
+   }
+}
+
+.jobs-ads {
+   // .jobs-ads__total
+   &__total {
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .jobs-ads__articles
+   &__articles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem 0;
+      margin: 0 -0.625rem;
+   }
+   // .jobs-ads__item
+   &__item {
+      flex: 1 1 50%;
+      padding: 0 0.625rem;
+      min-width: 28.125rem;
+      @media (max-width: 480px) {
+         min-width: 20rem;
+      }
+   }
+}
+
+.favorite-articles-block {
+   &:not(:last-child) {
+      margin-bottom: 3.75rem;
+   }
+   @media (max-width: 700px) {
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   & > h3 {
+      font-family: Oswald;
+      font-size: 1.75rem;
+      color: $orange;
+      line-height: 1.3;
+      letter-spacing: 0.56px;
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .favorite-articles-block__slider
+   &__slider {
+      @media (max-width: 700px) {
+         overflow: visible;
+      }
+   }
+   // .favorite-articles-block__item
+   &__item {
+   }
+}
+
+.ads-list {
+   @media (min-width: 1000.98px) {
+      flex: 0 1 32.1875rem;
+   }
+   // .ads-list__item
+   &__item {
+      cursor: pointer;
+      max-width: 32.1875rem;
+      min-width: 15.9375rem;
+      padding: 0.9375rem;
+      background-color: $white;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+      @media (max-width: 1200px) {
+         padding: 0.625rem;
+      }
+      @media (max-width: 1000px) {
+         max-width: 100%;
+      }
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .ads-list__header
+   &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 1.25rem;
+      &:not(:last-child) {
+         margin-bottom: 1.25rem;
+      }
+   }
+   // .ads-list__type
+   &__type {
+      color: $orange;
+      font-size: 0.875rem;
+   }
+   // .ads-list__actions
+   &__actions {
+      background: url('../img/icons/actions/more-vertical.svg') center no-repeat;
+      width: 1.5rem;
+      height: 1.5rem;
+   }
+   // .ads-list__title
+   &__title {
+      font-family: Oswald;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      &:not(:last-child) {
+         margin-bottom: 0.3125rem;
+      }
+   }
+   // .ads-list__view-ad
+   &__view-ad {
+      display: inline-block;
+      color: $grayC2;
+      padding-left: 1.5rem;
+      background: url('../img/icons/arrowDoubleUpLeft.svg') left center no-repeat;
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .ads-list__footer
+   &__footer {
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 1.25rem;
+   }
+   // .ads-list__statys
+   &__statys {
+      color: $grayC2;
+      &.new {
+         color: $orange;
+         position: relative;
+         padding-left: 1.25rem;
+         &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-radius: 50%;
+            background-color: $orange;
+            transform: translate(0, -50%);
+         }
+      }
+   }
+   // .ads-list__time
+   &__time {
+      color: $gray9E;
+   }
+}
+
+.ads-block {
+   display: flex;
+   align-items: flex-start;
+   gap: 1.25rem;
+   @media (max-width: 1200px) {
+      gap: 0 0.9375rem;
+   }
+   @media (max-width: 999px) {
+      align-items: stretch;
+      gap: 1.25rem;
+      flex-direction: column;
+   }
+}
+
+#content {
+   @media (min-width: 1000.98px) {
+      flex: 0 1 66.75rem;
+   }
+}
+
+.job-offer {
+   padding: 1.25rem;
+   background-color: $white;
+   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+   @media (max-width: 1200px) {
+      padding: 0.625rem;
+   }
+   @media (min-width: 700.98px) {
+      min-width: 31.5625rem;
+   }
+   // .job-offer__title
+   &__title {
+      color: $blackA1;
+      font-family: Oswald;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      // .job-offer__title_mb
+      &_mb {
+         &:not(:last-child) {
+            margin-bottom: 0.9375rem;
+         }
+      }
+   }
+   // .job-offer__view-ad
+   &__view-ad {
+      display: inline-block;
+      color: $orange;
+      padding-left: 1.5rem;
+      background: url('../img/icons/arrowDoubleUpLeft_orange.svg') left center no-repeat;
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+   }
+   table {
+      border-spacing: 0 0.25rem;
+      tr {
+         td {
+            &:first-child {
+               color: $gray9E;
+               font-weight: 400;
+               padding-right: 1.25rem;
+               @media (max-width: 479.98px) {
+                  padding-left: 0.9375rem;
+               }
+            }
+            @media (max-width: 480px) {
+               font-size: 0.875rem;
+            }
+         }
+      }
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+   }
+   // .job-offer__file
+   &__file {
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0 0.9375rem;
+      color: $orange;
+      &::before {
+         content: '';
+         height: 2.25rem;
+         width: 2.125rem;
+         background: url('../img/icons/actions/linkSimple.svg') center no-repeat, $gray9E;
+      }
+      input {
+         visibility: hidden;
+         position: absolute;
+         left: -200%;
+      }
+   }
+}
+
+.chat {
+   background-color: $white;
+   padding: 1.25rem 1.25rem 1.875rem;
+   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+   @media (max-width: 1200px) {
+      padding: 0.625rem;
+   }
+   // .chat__header
+   &__header {
+      &:not(:last-child) {
+         margin-bottom: 3.125rem;
+      }
+   }
+   // .chat__title
+   &__title {
+      font-family: Oswald;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      @media (max-width: 1200px) {
+         font-size: 1rem;
+      }
+   }
+   // .chat__view-ad
+   &__view-ad {
+      color: $orange;
+      padding-left: 1.5rem;
+      background: url('../img/icons/arrowDoubleUpLeft_orange.svg') left center no-repeat;
+   }
+   // .chat__body
+   &__body {
+      overflow-y: auto;
+      max-height: 33.75rem;
+      display: grid;
+      gap: 1.25rem 0;
+      &::-webkit-scrollbar {
+         width: 10px; /* ширина панелі */
+      }
+
+      /* Стилізація "бару" панелі прокручування */
+      &::-webkit-scrollbar-thumb {
+         background-color: #888; /* колір "бару" */
+         border-radius: 5px; /* закругленість "бару" */
+      }
+
+      /* Стилізація доріжки панелі прокручування */
+      &::-webkit-scrollbar-track {
+         background-color: #f1f1f1; /* колір доріжки */
+      }
+      &:not(:last-child) {
+         margin-bottom: 3.125rem;
+      }
+   }
+}
+.message {
+   display: grid;
+   justify-self: start;
+   max-width: 32.1875rem;
+   // .message_user
+   &_user {
+      justify-self: end;
+      .message__header {
+         justify-self: end;
+      }
+      .message__body {
+         p {
+            margin-right: 3.875rem;
+            border-radius: 15px 0px 15px 15px;
+            @media (max-width: 1200px) {
+               margin-right: 1.875rem;
+            }
+            @media (max-width: 480px) {
+               margin-right: 1.5rem;
+            }
+         }
+         &::before {
+            content: url('../img/chat/checkCircle.svg');
+         }
+         &::after {
+            display: none;
+         }
+      }
+      .message__time {
+         @media (max-width: 480px) {
+            padding-left: 3rem;
+         }
+      }
+   }
+   // .message__header
+   &__header {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 1.25rem;
+      img {
+         width: 2.625rem;
+         height: 2.625rem;
+         border-radius: 50%;
+      }
+      &:not(:last-child) {
+         margin-bottom: 0.3125rem;
+      }
+   }
+   // .message__name
+   &__name {
+      color: $blackA1;
+      font-family: Oswald;
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+   }
+   // .message__body
+   &__body {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 0.625rem;
+      margin-left: 3.875rem;
+      @media (max-width: 1200px) {
+         margin-left: 2.75rem;
+      }
+      @media (max-width: 480px) {
+         margin-left: 1.5rem;
+      }
+      p {
+         font-weight: 400;
+         white-space: pre-line;
+         background-color: $whiteF5;
+         border-radius: 0px 15px 15px 15px;
+         padding: 1.5625rem 1.25rem;
+      }
+      &::after {
+         content: url('../img/chat/checkCircle.svg');
+      }
+      &:not(:last-child) {
+         margin-bottom: 0.3125rem;
+      }
+   }
+   // .message__time
+   &__time {
+      color: $gray9E;
+      font-size: 0.75rem;
+      line-height: 1.3;
+      padding-left: 5.25rem;
+      @media (max-width: 1200px) {
+         padding-left: 4rem;
+      }
+      @media (max-width: 480px) {
+         padding-left: 1.5rem;
+      }
+   }
+}
+.chat-panel {
+   border-radius: 0.25rem;
+   background-color: $whiteF5;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-right: 1.25rem;
+   // .chat-panel__input
+   &__input {
+      font-size: 0.75rem;
+      flex: 1 1 auto;
+      height: 100%;
+      input {
+         width: 100%;
+         outline: none;
+         background-color: transparent;
+         padding: 1.5625rem 1.25rem;
+         &::placeholder {
+            color: $gray75;
+         }
+      }
+   }
+   // .chat-panel__actions
+   &__actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 0.625rem;
+   }
+   // .chat-panel__media
+   &__media {
+      position: relative;
+      cursor: pointer;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url('../img/chat/linkSimple.svg') center no-repeat;
+      input {
+         visibility: hidden;
+         position: absolute;
+         left: -200%;
+      }
+   }
+   // .chat-panel__emoji
+   &__emoji {
+      width: 1.5rem;
+      height: 1.5rem;
+      background: url('../img/chat/smiley.svg') center no-repeat;
+   }
+   // .chat-panel__send
+   &__send {
+      height: 2.625rem;
+      width: 2.625rem;
+      background: url('../img/chat/arrowCircleRight.svg') center no-repeat, $orange;
+      border-radius: 50%;
+   }
+}

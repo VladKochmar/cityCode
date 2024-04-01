@@ -1,0 +1,49 @@
+.input {
+   color: $mainColor;
+   padding: 1.25rem 1.5rem;
+   &::placeholder {
+      color: $gray9E;
+   }
+   // .input_background
+   &_background {
+      background-color: $whiteF5;
+   }
+}
+
+.label {
+   position: relative;
+   background-color: $whiteF5;
+   &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      width: 0.625rem;
+      height: 0.625rem;
+      background: url('../../img/icons/polygon_orange.svg') 0 0 no-repeat;
+      transform: translate(0, -50%);
+      transition: transform 0.3s ease 0s;
+   }
+   &:focus-within {
+      &::before {
+         transform: translate(0, -50%) rotateX(180deg);
+      }
+   }
+   & .input {
+      width: 100%;
+      background-color: transparent;
+   }
+}
+
+.textarea {
+   resize: none;
+}
+
+textarea,
+input {
+   &.error {
+      &::placeholder {
+         color: $orange;
+      }
+   }
+}

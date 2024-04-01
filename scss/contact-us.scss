@@ -1,0 +1,115 @@
+.contact-us {
+   padding: 1.25rem 0 5rem;
+   @media (max-width: 1000px) {
+      padding: 0 0 5rem;
+   }
+   // .contact-us__container
+   &__container {
+   }
+   // .contact-us__body
+   &__body {
+      @media (min-width: 1000.98px) {
+         display: flex;
+         gap: 0 1.25rem;
+      }
+   }
+   // .contact-us__map
+   &__map {
+      display: none;
+      @media (min-width: 1000.98px) {
+         display: block;
+         flex: 0 1 70rem;
+         max-width: 70rem;
+      }
+   }
+   // .contact-us__form
+   &__form {
+      @media (min-width: 1000.98px) {
+         flex: 0 1 46.25rem;
+      }
+      padding: 1.25rem;
+      background-color: $whiteF5;
+      @media (max-width: 1000px) {
+         &:not(:last-child) {
+            margin-bottom: 1.875rem;
+         }
+      }
+   }
+   // .contact-us__input
+   &__input {
+      width: 100%;
+      &:not(:last-child) {
+         margin-bottom: 0.625rem;
+      }
+   }
+   // .contact-us__textarea
+   &__textarea {
+      width: 100%;
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   // .contact-us__button
+   &__button {
+      &::before {
+         content: url('../img/icons/actions/mail.svg');
+         max-width: 1.5rem;
+         max-height: 1.5rem;
+      }
+   }
+}
+
+.contacts {
+   @media (max-width: 1000px) {
+      display: inline-grid;
+      gap: 1.875rem 0;
+   }
+   // .contacts__socials
+   &__socials {
+      @media (max-width: 1000px) {
+         order: 2;
+      }
+      display: flex;
+      gap: 0 0.9375rem;
+      li {
+         flex: 0 0 2.25rem;
+         max-width: 2.25rem;
+      }
+      &:not(:last-child) {
+         margin-bottom: 2.5rem;
+      }
+   }
+   // .contacts__table
+   &__table {
+      @media (max-width: 1000px) {
+         order: 1;
+      }
+      border-spacing: 0 0.3125rem;
+      tr {
+         &:first-child {
+            @media (max-width: 1000px) {
+               display: none;
+            }
+         }
+      }
+      td {
+         &:first-child {
+            color: $gray75;
+            font-size: 0.875rem;
+            padding: 0 1.5rem 0 2.125rem;
+         }
+      }
+   }
+   // .contacts__address
+   &__address {
+      background: url('../img/icons/map-2.svg') left center / 1.5rem no-repeat;
+   }
+   // .contacts__email
+   &__email {
+      background: url('../img/icons/actions/mail.svg') left center no-repeat;
+   }
+   // .contacts__phone
+   &__phone {
+      background: url('../img/icons/actions/phoneCall.svg') left center / 1.5rem no-repeat;
+   }
+}

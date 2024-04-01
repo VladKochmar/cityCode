@@ -1,0 +1,24 @@
+.jobs-section {
+   padding: 2.5rem 0;
+   // .jobs-section_padding-bottom
+   &_padding-bottom {
+      padding-bottom: 5rem;
+   }
+   // .jobs-section__container
+   &__container {
+   }
+   // .jobs-section__title
+   &__title {
+      &:not(:last-child) {
+         margin-bottom: 1.875rem;
+      }
+   }
+   // .jobs-section__body
+   &__body {
+      display: grid;
+      gap: 1.25rem 0.625rem;
+      @media (min-width: 1000.98px) {
+         grid-template-columns: repeat(2, 1fr);
+      }
+   }
+}
